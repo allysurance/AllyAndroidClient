@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nipunarora.ally.ChooseAlly"
+    android:background="#ffffff">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentStart="true">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.3"
+          android:background="#EF5350"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Welcome to Ally!"
+              android:textColor="#ffffff"
+              android:fontFamily="sans-serif-condensed"
+              android:textSize="30sp"
+              android:layout_centerHorizontal="true"
+              android:layout_centerInParent="true"
+              android:id="@+id/title"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Your companions await you."
+              android:textColor="#ffffff"
+              android:fontFamily="sans-serif-condensed"
+              android:textSize="20sp"
+              android:layout_below="@+id/title"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="8dp"
+              />
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.7"
+          android:background="#ffffff">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <android.support.v7.widget.CardView
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_margin="16dp"
+                  android:layout_weight="0.5"
+                  app:cardBackgroundColor="#ffffff"
+                  app:cardElevation="8dp"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:foreground="?android:attr/selectableItemBackground"
+                  android:id="@+id/adam">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:textColor="@android:color/black"
+                          android:text="Adam"
+                          android:textAlignment="center"
+                          android:layout_margin="8dp"
+                          android:textSize="18sp"
+                          android:layout_weight="0.2"
+                          android:fontFamily="sans-serif-condensed"
+                          />
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="0dp"
+                          android:layout_weight="0.4"
+                          android:src="@drawable/assistant"
+                          android:layout_gravity="center_horizontal"/>
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:textColor="@android:color/black"
+                          android:text="Adam provides with insurance policies tailored to your needs"
+                          android:textAlignment="center"
+                          android:layout_margin="8dp"
+                          android:textSize="15sp"
+                          android:layout_weight="0.4"
+                          />
+
+
+                  </LinearLayout>
+
+              </android.support.v7.widget.CardView>
+
+              <android.support.v7.widget.CardView
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.5"
+                  app:cardBackgroundColor="#ffffff"
+                  android:layout_margin="16dp"
+                  app:cardElevation="8dp"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:foreground="?android:attr/selectableItemBackground"
+                  android:id="@+id/eve"
+                  >
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:textColor="@android:color/black"
+                          android:text="Eve"
+                          android:textAlignment="center"
+                          android:layout_margin="8dp"
+                          android:textSize="18sp"
+                          android:layout_weight="0.2"
+                          android:fontFamily="sans-serif-condensed"
+                          />
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="0dp"
+                          android:layout_weight="0.4"
+                          android:src="@drawable/heartbeat"
+                          android:layout_gravity="center_horizontal"/>
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:textColor="@android:color/black"
+                          android:text="Eve encourages you to enhance your fitness levels and provides with great deals for taking care of yourself"
+                          android:textAlignment="center"
+                          android:layout_margin="8dp"
+                          android:textSize="15sp"
+                          android:layout_weight="0.4"
+                          />
+
+
+                  </LinearLayout>
+
+              </android.support.v7.widget.CardView>
+          </LinearLayout>
+
+      </RelativeLayout>
+  </LinearLayout>
+
+</android.widget.RelativeLayout>

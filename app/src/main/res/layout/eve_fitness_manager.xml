@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardElevation="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/adam">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/maintheme">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Today's Activity"
+                    android:textAlignment="center"
+                    android:layout_margin="8dp"
+                    android:textSize="25sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/head"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/running"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp"
+                    android:id="@+id/run"
+                    android:layout_below="@+id/head"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/run">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"/>
+                    <TextView
+                        android:layout_width="0dp" android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:text="4\nkm"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif"
+                        android:layout_margin="4dp"/>
+
+                    <TextView
+                        android:layout_width="0dp" android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:text="750\nsteps"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif"
+                        android:layout_margin="4dp"/>
+                    <TextView
+                        android:layout_width="0dp" android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:text="650\nCal"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif"
+                        android:layout_margin="4dp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Workout Goals"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-condensed"
+            />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#ffffff"
+            android:layout_margin="16dp"
+            app:cardElevation="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/steps"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/steps"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1027 Steps"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/maintheme"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="More to go for the day"
+                    android:textAlignment="center"
+                    android:layout_margin="8dp"
+                    android:textSize="15sp"
+                    />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#ffffff"
+            android:layout_margin="16dp"
+            app:cardElevation="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/calories"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calculator"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="568 Calories"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/maintheme"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="More to go for the day"
+                    android:textAlignment="center"
+                    android:layout_margin="8dp"
+                    android:textSize="15sp"
+                    />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/maintheme"
+            android:layout_margin="16dp"
+            app:cardElevation="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/nutrition"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Nutrition Tips"
+                    android:textAlignment="center"
+                    android:layout_margin="8dp"
+                    android:textSize="25sp"
+                    android:fontFamily="sans-serif-condensed"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/diet"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Let food be thy medicine and medicine be thy food."
+                    android:textAlignment="center"
+                    android:layout_margin="8dp"
+                    android:textSize="15sp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    />
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewallnutrition"
+                    android:text="View All"
+                    android:background="?attr/selectableItemBackground"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
